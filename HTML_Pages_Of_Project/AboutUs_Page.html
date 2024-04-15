@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    
+        <style>
+            .card {
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 #B270A2;
+    
+}
+
+.First-card-container {
+    margin-top: 8%;
+    height: 60%;
+    width: 80%;
+margin-left: 10%;
+}
+
+.second-card-conatainer {
+    margin-top: 5%;
+}
+
+.Third-card-container {
+    margin-top: 5%;
+}
+
+.Fourth-card-container {
+    margin-top: 5%;
+}
+
+.Fifth-card-container {
+    margin-top: 5%;
+}
+
+.Sixth-card-container {
+    margin-top: 5%;
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+}
+
+.inner:hover img {
+    transform: scale(1.5);
+    /* scale = increase the size of image */
+}
+#centerpieces{
+    margin-left: 40%;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #B270A2;
+}
+.navbar{
+    background-color: #F65A83;
+    height: 60px;
+}
+
+.ulmarleft{
+    margin-left: 80px;
+}
+
+.nav-item:hover{
+    background-color: #F65A83;
+    transform: scale(1.1);
+}
+
+.Icons{
+    height: 20px;
+    margin-left: 10px;
+}
+
+.top-heading {
+    color: #F65A83;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-family:Brush script MT , Brush Script Std, cursive;
+    font-size: 50px;
+}
+.slide-bar-title {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+}
+text-center2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.container{
+    background-color: #08192b;
+}
+
+.text-white{
+    color: black;
+    font-weight: 600;
+}
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <div class="container-fluid">
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item ulmarleft">
+                <a class="nav-link active" aria-current="page" href="../index.html">
+                  <font
+                    style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                    Home
+                  </font>
+                  <img src="../Images/HomePage/HomeIcon.png" class="Icons">
+                </a>
+              </li>
+              <li class="nav-item ulmarleft">
+                <a class="nav-link active" href="../pages/Decoration.html">
+                  <font
+                    style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                    Decoration
+                  </font>
+                  <img src="../Images/HomePage/DecoIcon.png" class="Icons">
+                </a>
+              </li>
+              <li class="nav-item ulmarleft">
+                <a class="nav-link active" href="../pages/Destination-Wedding.html">
+                  <font
+                    style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                    Destination Wedding
+                  </font>
+                  <img src="../Images/HomePage/DestIcon.png" class="Icons">
+                </a>
+              </li>
+              <li class="nav-item ulmarleft">
+                <a class="nav-link active" href="../pages/The-wedding-card.html">
+                  <font
+                    style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                    E-Invites 💌
+                  </font>
+                </a>
+              </li>
+              <li class="nav-item ulmarleft">
+                <a class="nav-link active" href="../pages/AboutUs.html">
+                  <font
+                    style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                    About Us
+                  </font>
+                  <img src="../Images/HomePage/AbouIcon.png" class="Icons">
+                </a>
+              </li>
+              <li class="nav-item ulmarleft">
+                <a class="nav-link active" href="../pages/Login.html">
+                  <font
+                    style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                    Login
+                  </font>
+                  <img src="../Images/HomePage/logicon.png" class="Icons">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="First-card-container">
+        <h3 id="centerpieces">About us</h3>
+        <div class="row gy-4 my-3"> <!--gy = card k bich me space ayga ar bottom se jagh chutege
+                                         my = to se jagh chutege-->
+          <div class=" col-sm-6  col-md-4  col-lg-3"> <!--col-sm-6 = small size me ayga to 2 card me devde hona chaiye
+                                                          col-md-3 = medium me aye to 3 card dekhe
+                                                          col-lg-3 = full expand krne pr 4 card dikhe -->
+            <div class="card p-2">
+              <div class="inner">
+                <img src="../Images/Images of About/RG.jpg" class="card-img-top" height="250px"
+                  width="360px" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Rahul Gundkar</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class=" col-sm-6  col-md-4  col-lg-3">
+            <div class="card p-2">
+              <div class="inner">
+                <img src="../Images/Images of About/RG.jpg" class="card-img-top" height="250px"
+                  width="360px" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Himanshu Bhedurkar</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-sm-6  col-md-4  col-lg-3">
+            <div class="card p-2">
+              <div class="inner">
+                <img src="../Images/Images of About/RG.jpg" class="card-img-top" height="250px"
+                  width="360px" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Om kshirsagar</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-sm-6  col-md-4  col-lg-3">
+            <div class="card p-2">
+              <div class="inner">
+                <img src="../Images/Images of About/RG.jpg" class="card-img-top" height="250px"
+                  width="360px" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Tanmay Panghate</p>
+              </div>
+            </div>
+          </div>
+  
+    
+          <div class="col-lg-11">
+
+            <footer class=" text-center text-lg-start text-white">
+              <div class="container p-4">
+                <div class="row my-4">
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          
+                    <div class="rounded-circle  shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+                      <img src="./Images/HomePage/LOGO WBG.png" height="180" alt=""
+                           loading="lazy" />
+                      
+                    </div>
+                    <h2 class="LogoName ms-5">The Wedding <br> Story Book</h2>
+          
+                    <p class="text-center2">"From Dreams To Reality: Let Us Plan Your Wedding"</p>
+          
+                  </div>
+          
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Our Services</h5>
+          
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <a href="./pages/Decoration.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Decoration
+                        <img src="./Images/HomePage/DecoIcon.png" class="Icons" >
+                      </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./pages/Destination-Wedding.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Destination Wedding
+                          <img src="./Images/HomePage/DestIcon.png" class="Icons" >
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./pages/Photo-gallery.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Photo Gallery
+                          <img src="./Images/HomePage/PhotIcon.png" class="Icons" >
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./pages/MakeUp.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Makeup
+                          <img src="./Images/HomePage/MakeIcon.png" class="Icons" >
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./pages/Jewellery.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Jewellary
+                          <img src="./Images/HomePage/jwelIcon.png" class="Icons" >
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./pages/Bride-Groom-Cloth.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Bride Clothes
+                          <IMG src="./Images/HomePage/BRIDiCON.png" class="Icons" >
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+            
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Our Services</h5>
+          
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <a href="./pages/Vendor.html" class="text-white" style="text-decoration: none"><i class="fas fa-paw pe-3"></i>Vendors
+                          <img src="./Images/HomePage/VendIcon.png" class="Icons" >
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./pages/Halls.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Halls & Lawns
+                          <img src="./Images/HomePage/hallIcon.png" class="Icons" >
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./pages/The-wedding-card.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>E-Invites</a>
+                        <img src="./Images/HomePage/InviIcon.png" class="Icons" >
+                      </li>
+                      <li class="mb-2">
+                        <a href="./pages/AboutUs.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>About Us
+                          <img src="./Images/HomePage/AbouIcon.png" class="Icons" >
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#Home" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Home
+                          <img src="./Images/HomePage/HomeIcon.png" class="Icons" >
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Contact</h5>
+          
+                    <ul class="list-unstyled">
+                      <li>
+                        <p><i class="fas fa-map-marker-alt pe-2"></i>Warsaw, 33 Street, Nagpur</p>
+                      </li>
+                      <li>
+                        <p><i class="fas fa-phone pe-2"></i>+ (555) 123-4567</p>
+                      </li>
+                      <li>
+                        <p><i class="fas fa-envelope pe-2 mb-0"></i>info@weddingstorybook.com</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </div>
+              <!-- Grid container -->
+          
+              <!-- Copyright -->
+              <div class="text-center p-3" style="background-color: black">
+                © 2023 Copyright:
+                <a class="text-white" href="http://theweddingstorybook.netlify.app">theweddingstorybook.netlify.app</a>
+              </div>
+              <!-- Copyright -->
+            </footer>
+          
+          </div>
+              
+</body>
+</html>
