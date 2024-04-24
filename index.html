@@ -23,7 +23,23 @@
             background-position: center;
         }
 
-
+        .preloader {
+    width: 100%;
+    height: 100vh;
+    background: #ffffff url(./Images/hall/Pulse@1.25x-1.1s-200px-200px.gif) center no-repeat;
+    /* Center the spinner horizontally and vertically */
+    position: fixed;
+    top: 0;
+    /* Align to the top of the viewport */
+    left: 0;
+    /* Align to the left of the viewport */
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    /* Center the spinner horizontally */
+    align-items: center;
+    /* Center the spinner vertically */
+  }
 
         h1 {
             font-size: 72px;
@@ -86,7 +102,7 @@
 
 
 </head>
-
+<div class="preloader"> </div>
 <body class="d-flex h-100 text-center text-bg-light justify-content-center sample ">
     <div class="back">
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column justify-content-center sample">
@@ -266,6 +282,17 @@
                 }
             });
         });
+
+
+
+        const fadeout = () => {
+    setTimeout(() => {
+        const loader = document.querySelector(".preloader");
+        loader.classList.remove("preloader");
+    }, 2000); // 2000 milliseconds = 2 seconds
+}
+
+window.addEventListener("load", fadeout);
     </script>
 
 </body>
