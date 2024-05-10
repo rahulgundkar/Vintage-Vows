@@ -8,91 +8,954 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Pacifico&family=Rubik:wght@500&display=swap');       
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');       
+/* 
+font-family: 'Rubik', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'PT Serif', serif;
+*/
+.NavName{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+  }
+  
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F65A83;
+  }
+  
+  .ulmarleft{
+    margin-left: 60px;
+  }
+  
+  .ulmarleft2{
+    margin-left: 10px;
+  }
+  
+  .nav-item:hover{
+    background-color: #F65A83;
+    transform: scale(1.1);
+  }
+  
+  .Icons{
+    height: 20px;
+    margin-left: 10px;
+  }
+  
+  .Icons2{
+    height: 40px;
+  }
+  
+  .lightbtn{
+    background-color: #F65A83;
+    color: #ffebe8;
+  }
+  
+  .lightbtn:hover{
+    background-color: #08192b;
+    color: #ffebe8;
+  }
+  
+  .card-img{
+      height: 600px;
+      background-repeat: no-repeat;
+      background-blend-mode:overlay;
+    }
+    .card-title{
+      text-align: center;
+      font-style:bold;
+      font-size: 40px;
+      margin-top: 100px;
+      align-items: center;
+      margin-right: 50px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+           
+        body{
+            padding: 0;
+            margin: 0;
+        }
+
+        
+        .Aboutus-img{
+            height: 400px;
+            width:100%;
+            position:relative;
+           
+            
+        }
+
+        .event-container{
+    
+            height: 580px;
+            background-color:antiquewhite;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 100px;
+            
+        }
+
+        .event-img{
+        
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .event1-img{
+            background-image:url(../images/about-img/party-img.webp);
+            background-size: cover;
+            height: 400px;
+            width: 300px;
+            border-radius: 20px;
+            margin-left: 20px;
+            margin-top: 90px;
+        }
+
+        .event2-img{
+            background-image:url(../images/about-img/beautiful-event-at-night.jpg);
+            background-size: cover;
+            height: 300px;
+            width: 200px;
+            border-radius: 20px;
+            margin: 135px 0px 0px -90px  ;
+           
+        }
+        .About-description{
+            width: 600px;
+           
+            
+        }
+
+
+
+
+        .Heading{
+            margin-right: 300px;
+            text-align: right ;
+            font-size:xx-large;
+            font-weight: bold;
+            margin-left: 50px;
+            font-family: 'Rubik', sans-serif;
+            
+        }
+
+       
+
+        .Organization-name{
+
+            font-size:x-large;
+            font-family:'Pacifico', cursive;
+            
+
+        }
+        .paragraph{
+            text-align: center;
+            text-wrap: wrap;
+            padding-right: 20px;
+            font-family: 'Rubik', sans-serif;
+            
+        }
+        .box-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 500px;
+        }
+
+        .box{
+            height:135px;
+            width:150px;
+            background-color:bisque;
+            text-align: center;
+            align-items: center;
+            font-weight: bold;
+            border-radius: 10px;
+            border:2px solid rgb(252, 209, 157);
+            padding: 10px;
+            
+        }
+        .medal-img{
+            height: 40px;
+
+        }
+
+        .ten-heading{
+            font-size:large;
+            font-weight:800;
+            font-family: 'Rubik', sans-serif;
+        }
+        .list{
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .btn{
+            height: 40px;
+            width:120px;
+           
+             
+            font-weight: bold;
+           margin-left: 50%;
+           margin-right: 50%;
+            font-size:medium;
+
+            background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+            
+            padding: 10px 20px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            /* box-shadow: 0 0 20px #eee; */
+            border-radius: 10px;
+            display: block;
+            border: #eee;
+           
+
+           
+
+        }
+        .btn:hover{
+            cursor: pointer;
+            background-color: white;
+            border-radius: 10px  5px 10px 5px ;
+            color: black;
+            box-shadow: 2px 2px 2px 2px blueviolet ;
+        }
+
+        .btn-1{
+            /* height: 40px;
+            width:100px;
+            border-radius: 10px  5px 10px 5px ;
+            background-color:black;
+            color: white;
+            font-weight: bold; */
+           margin: auto;
+            
+
+            background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+            
+            padding: 15px 30px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            /* box-shadow: 0 0 20px #eee; */
+            border-radius: 10px;
+            display: block;
+            border: #eee;
+           
+        }
+        .btn-1:hover{
+            cursor: pointer;
+            /* background-color: white;
+            border-radius: 10px  5px 10px 5px ;
+            color: black;
+            box-shadow: 2px 2px 2px 2px blueviolet ; */
+
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        
+        
+
+        .card-container{
+           
+            width: 90%;
+           margin-left:70px;
+          display: flex;
+         flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: center;
+          
+              
+        }
+
+        .cards{
+            background-color: #cd96f0;
+            height: 230px;
+            width: 200px;
+            margin: 10px;
+            padding: 10px;   
+            border-radius: 10px;       
+        }
+         .cards:hover{
+            background-color: rgb(190, 188, 250);
+            box-shadow: 2px 2px 5px 5px rgb(204, 201, 252);
+            cursor: pointer;
+         }
+
+        .card-container-heading{
+            text-align: center;
+            font-weight: bold;
+            margin-top: 180px;
+            font-family: 'Rubik', sans-serif;
+            
+        
+        }
+
+        .dp-img{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            height:100px;
+            width:80px;
+            border-radius: 20px;
+            background-size: cover;
+            
+        }
+
+        .footer{
+            background-color: aqua;
+            height: 300px;
+            
+            display: flex;
+            flex-direction: row;
+        }
+
+        .footer-img{
+            height: 30px;
+            width: 30px;
+        }
+
+        .footer-logo{
+            background-color: aquamarine;
+            height: 100px;
+            width:120px;
+        }
+        .dp-desc{
+            text-align: center;
+            font-family: 'PT Serif', serif;
+
+        }
+        *{
+    margin-top: 0%;
+    margin-left: 0%;
+}
+
+body{
+    background-color: #ffebe8;
+}
+
+.Dark{
+    color: white;
+    background-color: #212121;
+}
+
+.NavName{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F65A83;
+}
+
+.ulmarleft{
+    margin-left: 60px;
+}
+
+.ulmarleft2{
+    margin-left: 10px;
+}
+
+.nav-item:hover{
+    background-color: #F65A83;
+    transform: scale(1.1);
+}
+
+.Icons{
+    height: 20px;
+    margin-left: 10px;
+}
+
+.Icons2{
+    height: 40px;
+}
+
+.lightbtn{
+    background-color: #F65A83;
+    color: #ffebe8;
+}
+
+.lightbtn:hover{
+    background-color: #08192b;
+    color: #ffebe8;
+}
+  
+
+.BGimg{
+    background-image: url(../Images/HomePage/hand.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HandBox{
+    height: 310px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.HandName{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffebe8;
+    align-items: center;
+    justify-content: center;
+}
+
+.HandSlogan{
+    font-size: 30px;
+    font-family:'Times New Roman';
+    color: #ffebe8;
+    margin-left: 60px;
+    margin-top: 100px;
+    padding: 15px;
+}
+
+/* .Bridaloutfit{
+    margin-top: 50px;
+    height: 350px;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    margin: auto;
+} */
+
+.VidClass{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.video{
+    margin-bottom: 100px;
+    border: 10px solid #F65A83;
+    box-shadow: 5px 5px 5px 5px black ;
+    border-radius: 15px;
+}
+
+.Slidesize{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.SlideRad{
+    border-radius: 15px;
+}
+
+.HandBox2{
+    height: 100px;
+    width: 600px;
+    margin-top: 100px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+}
+
+.Row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Destwed{
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px black;
+    border: 10px solid #F65A83;
+}
+
+.Destwed2{
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px black;
+    border: 10px solid #F65A83;
+}
+
+.OurServ{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CardRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body{
+    background-color: #F65A83;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px solid  black;
+    
+}
+
+.card-body:hover{
+    background-color: #ffebe8;
+    color: black;
+}
+
+.ChecKwork{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+
+.DecoRow:hover{
+    transform: scale(1.1);
+    transition:1s ease;
+}
+
+
+
+.VendorbBTNRow{
+    display: flex;
+    margin-top: 30px;
+}
+
+.VendorbBTN{
+    height: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: max-content;
+    background-color: #ffebe8;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.VendorbBTN:hover{
+    height: 60px;
+    padding: 5px;
+    width: max-content;
+    background-color: #F65A83;
+    border: 2px solid black;
+    transform: scale(1.1);
+    margin-bottom: 50px;
+}
+
+.row2{
+    background-color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 2px #F65A83;
+}
+
+.PartHead{
+    font-size: 50px;
+    font-family: 600;
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.PartIMG{
+    height: 100px;
+}
+
+.ContRow{
+    height: 500px;
+    background-color: #e8e8e8;
+    border-radius: 25px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px 2px #F65A83;;
+}
+
+.ContactUS{
+    color: black;
+    text-align: justify;
+}
+
+.ContactUSInfo{
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: serif;
+    
+}
+
+.ContIcon{
+    color: #F65A83;
+    height: 30px;
+}
+
+.InfoIcon{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.ContBord{
+    border-radius: 50px;
+    background-color: #feaea3;
+    border: 2px solid black;
+}
+
+.ContForm{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.Contlabel{
+    color: black;
+    margin-top: 10px;
+}
+
+.ContInput{
+    height: 45px;
+    font-weight: 600;
+    border-radius: 15px;
+    background-color: #e8e8e8;
+}
+
+.ContInput2{
+    height: 100px;
+    border-radius: 25px;
+    background-color: #e8e8e8;
+    text-align: left;
+    align-items: start;
+}
+
+.SubmitDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SubmitBTN{
+    background-color: #ffebe8;
+    padding: 5px;
+    font-size: large;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.SubmitBTN:hover{
+    background-color: #F65A83;
+}
+
+/* .LogoName{
+    margin-left: 60px;
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+.text-center2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.container{
+    background-color: #08192b;
+}
+
+.text-white{
+    color: black;
+    font-weight: 600;
+}
+
+    
+</style>
 <body>
     
-  
-    
-     <div class="container text-center">
-        <div class="row align-items-start">
-            <div class="col-md-4 ">
-             
-                <div class="card shadow p-3 mb-5 bg-body-tertiary ">
-                    <img src="../Images/Images of About/Sid.jpeg" height="350px" class=" card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title "> Sidhharth  </h3>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div class=" col-md-4">
-                <div class="img1 card shadow p-3 mb-5 bg-body-tertiary ">
-                    <img src="../Images/Images of About/swapnil.jpg" height="300px" class=" card-img-top"  alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">Swapnil</h3>
-
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div class="col-md-4">
-                <div class="card shadow p-3 mb-5 bg-body-tertiary ">
-                    <img src="..." height="350px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title"></h3>
-
-                    </div>
-
-                </div>
-            </div>
-
+    <nav class="navbar navbar-expand-lg fixed-top" id="Home">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">
+            <img src="./Images/HomePage/LOGO.png" alt="TheWeddingStoryBook" width="80" height="80">
+          </a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item ulmarleft">
+                <a class="nav-link active" aria-current="page" href="index.html">
+                  <font class="NavName"
+                    style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                    Home
+                  </font>
+                  <img src="../Images/HomePage/HomeIcon.png" class="Icons" >
+                </a>
+              </li>
+              <li class="nav-item ulmarleft">
+                <a class="nav-link active" href="../pages/Decoration.html">
+                  <font class="NavName"
+                    style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                    Decoration
+                  </font>
+                  <img src="../Images/HomePage/DecoIcon.png" class="Icons" >
+                </a>
+              </li>
+              <li class="nav-item ulmarleft">
+                <a class="nav-link active" href="../pages/Destination-Wedding.html">
+                  <font class="NavName"
+                    style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                    Destination Wedding
+                  </font>
+                  <img src="../Images/HomePage/DestIcon.png" class="Icons" >
+                </a>
+              </li>
+              <li class="nav-item ulmarleft">
+                <a class="nav-link active" href="../pages/The-wedding-card.html">
+                  <font class="NavName"
+                    style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                    E-Invites 💌
+                  </font>
+                </a>
+              </li>
+              <li class="nav-item ulmarleft">
+                <a class="nav-link active" href="../pages/AboutUs.html">
+                  <font class="NavName"
+                    style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                    About Us
+                  </font>
+                  <img src="../Images/HomePage/AbouIcon.png" class="Icons" >
+                </a>
+              </li>
+              <li class="nav-item ulmarleft">
+                <a class="nav-link active" href="../pages/Login.html">
+                  <font class="NavName"
+                    style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                    Login
+                  </font>
+                  <img src="../Images/HomePage/logicon.png" class="Icons" >
+                </a>
+              </li>
+              <button class="NavName ulmarleft lightbtn" style="border-style: 1px #ffebe8;" onclick="Light()">
+                <img src="../Images/HomePage/sun.png" class="Icons2">
+              </button>
+              <button class="NavName ulmarleft2 lightbtn" onclick="Dark()">
+                <img src="../Images/HomePage/dark.png" class="Icons2" >
+              </button>
+              </ul> 
+          </div>
         </div>
+      </nav>
+    
+</div>  
+
+<h1 class="card-container-heading">
+    <u>OUR TEAM</u></h1>
+
+<div class="card-container">
+    
+    
+    <div class="cards">
+        <img  class="dp-img"  src="../images/about-img/om.jpg"/>
+       <u> <p class="dp-desc"><b>rahul gundkar</b></p></u>
+        <p class="dp-desc"><b>CEO </b></p>
+        <img  src="../images/about-img/facebook.png" height="20px"/>
+        <img  src="../images/about-img/twitter.png" height="20px"/>
+        <img  src="../images/about-img/linkdin.png" height="20px"/>
+       
+        
     </div>
 
+    <div class="cards">
+        <img class="dp-img" src="../images/about-img/Prabhati.jpg"/>
+        <u>  <p class="dp-desc"><b>himanshu</b></p></u>
+        <p class="dp-desc"><b>Director</b></p>
+        <img  src="../images/about-img/facebook.png" height="20px"/>
+        <img  src="../images/about-img/twitter.png" height="20px"/>
+        <img  src="../images/about-img/linkdin.png" height="20px"/>
+       
+        
 
-    <div class="container text-center">
-        <div class="row align-items-start">
-            <div class="col-md-4 ">
-                
-                <div class="card shadow p-3 mb-5 bg-body-tertiary ">
-                    <img src="..." height="350px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title "> </h3>
+    </div>
 
-                    </div>
+    <div class="cards">
+        <img  class="dp-img" src="../images/about-img/sakshi.jpg"/>
+        <u>  <p class="dp-desc"><b>tanmay</b></p></u>
+        <p class="dp-desc"><b>Design Manager</b></p>
+        <img  src="../images/about-img/facebook.png" height="20px"/>
+        <img  src="../images/about-img/twitter.png" height="20px"/>
+        <img  src="../images/about-img/linkdin.png" height="20px"/>
+       
+       
+    </div>
 
+    <div class="cards">
+        <img class="dp-img" src="../images/about-img/Apurva.jpeg"/>
+        <u>  <p class="dp-desc"><b></b></p></u>
+        <p class="dp-desc"><b>Design Manager</b></p>
+        <img  src="../images/about-img/facebook.png" height="20px"/>
+        <img  src="../images/about-img/twitter.png" height="20px"/>
+        <img  src="../images/about-img/linkdin.png" height="20px"/>
+       
+       
+    </div>
+
+    
+
+    </div>
+    <div class="col-lg-11">
+
+        <footer class=" text-center text-lg-start text-white">
+          <div class="container p-4">
+            <div class="row my-4">
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      
+                <div class="rounded-circle  shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+                  <img src="./Images/HomePage/LOGO WBG.png" height="180" alt=""
+                       loading="lazy" />
+                  
                 </div>
+                <h2 class="LogoName ms-5">The Wedding <br> Story Book</h2>
+      
+                <p class="text-center2">"From Dreams To Reality: Let Us Plan Your Wedding"</p>
+      
+              </div>
+      
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Our Services</h5>
+      
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="./pages/Decoration.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Decoration
+                    <img src="./Images/HomePage/DecoIcon.png" class="Icons" >
+                  </a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="./pages/Destination-Wedding.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Destination Wedding
+                      <img src="./Images/HomePage/DestIcon.png" class="Icons" >
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="./pages/Photo-gallery.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Photo Gallery
+                      <img src="./Images/HomePage/PhotIcon.png" class="Icons" >
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="./pages/MakeUp.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Makeup
+                      <img src="./Images/HomePage/MakeIcon.png" class="Icons" >
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="./pages/Jewellery.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Jewellary
+                      <img src="./Images/HomePage/jwelIcon.png" class="Icons" >
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="./pages/Bride-Groom-Cloth.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Bride Clothes
+                      <IMG src="./Images/HomePage/BRIDiCON.png" class="Icons" >
+                    </a>
+                  </li>
+                </ul>
+              </div>
+        
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Our Services</h5>
+      
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="./pages/Vendor.html" class="text-white" style="text-decoration: none"><i class="fas fa-paw pe-3"></i>Vendors
+                      <img src="./Images/HomePage/VendIcon.png" class="Icons" >
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="./pages/Halls.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Halls & Lawns
+                      <img src="./Images/HomePage/hallIcon.png" class="Icons" >
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="./pages/The-wedding-card.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>E-Invites</a>
+                    <img src="./Images/HomePage/InviIcon.png" class="Icons" >
+                  </li>
+                  <li class="mb-2">
+                    <a href="./pages/AboutUs.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>About Us
+                      <img src="./Images/HomePage/AbouIcon.png" class="Icons" >
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#Home" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Home
+                      <img src="./Images/HomePage/HomeIcon.png" class="Icons" >
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Contact</h5>
+      
+                <ul class="list-unstyled">
+                  <li>
+                    <p><i class="fas fa-map-marker-alt pe-2"></i>Warsaw, 33 Street, Nagpur</p>
+                  </li>
+                  <li>
+                    <p><i class="fas fa-phone pe-2"></i>+ (555) 123-4567</p>
+                  </li>
+                  <li>
+                    <p><i class="fas fa-envelope pe-2 mb-0"></i>info@weddingstorybook.com</p>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
             </div>
-
-            <div class="col-md-4">
-                <div class="card shadow p-3 mb-5 bg-body-tertiary ">
-                    <img src="..." height="350px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title"></h3>
-
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div class="col-md-4">
-                <div class="card shadow p-3 mb-5 bg-body-tertiary ">
-                    <img src="..." height="350px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title"></h3>
-
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div> 
-
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: black">
+            © 2023 Copyright:
+            <a class="text-white" href="http://theweddingstorybook.netlify.app">theweddingstorybook.netlify.app</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+      
+      </div>
+      <!-- End of .container -->
+        
+        
     
 </body>
 </html>
