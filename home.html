@@ -1,479 +1,481 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The vintage-wow</title>
-  <!-- main css -->
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="icon" href="imgs/agents-1.jpg">
-  <!-- normalize css -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <!-- css bootstrap -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Cairo:wght@200;300;400;500;600;700&family=DynaPuff:wght@400;500;600&family=Josefin+Sans:ital,wght@0,200;0,300;1,300&family=Roboto+Slab:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,500&family=Shantell+Sans:wght@300;400;500&family=Tiro+Devanagari+Hindi:ital@0;1&family=Work+Sans:ital,wght@0,200;0,300;0,500;1,200&display=swap" rel="stylesheet">
-<!-- font awsome -->
-  <link rel="stylesheet" href="css/all.min.css">
-  <!-- Add Aos librarry -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Wedding Story Book</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link href="./css/index.css" rel="stylesheet">
 </head>
-<body>
-<!-- start header -->
-<nav class="navbar navbar-expand-lg sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="#"> vintage vow</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fa-solid fa-bars"></i>
+
+<body class="body" id="DarkMode">
+  <nav class="navbar navbar-expand-lg fixed-top" id="Home">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ulmarleft">
+            <a class="nav-link active" aria-current="page" href="index.html">
+              <font class="NavName"
+                style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                Home
+              </font>
+              <img src="./Images/HomePage/HomeIcon.png" class="Icons" >
+            </a>
+          </li>
+          <li class="nav-item ulmarleft">
+            <a class="nav-link active" href="./pages/Decoration.html">
+              <font class="NavName"
+                style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                Decoration
+              </font>
+              <img src="./Images/HomePage/DecoIcon.png" class="Icons" >
+            </a>
+          </li>
+          <li class="nav-item ulmarleft">
+            <a class="nav-link active" href="./pages/Destination-Wedding.html">
+              <font class="NavName"
+                style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                Destination Wedding
+              </font>
+              <img src="./Images/HomePage/DestIcon.png" class="Icons" >
+            </a>
+          </li>
+          <li class="nav-item ulmarleft">
+            <a class="nav-link active" href="./pages/The-wedding-card.html">
+              <font class="NavName"
+                style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                E-Invites 💌
+              </font>
+            </a>
+          </li>
+          <li class="nav-item ulmarleft">
+            <a class="nav-link active" href="./pages/AboutUs.html">
+              <font class="NavName"
+                style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                About Us
+              </font>
+              <img src="./Images/HomePage/AbouIcon.png" class="Icons" >
+            </a>
+          </li>
+          <li class="nav-item ulmarleft">
+            <a class="nav-link active" href="./pages/Login.html">
+              <font class="NavName"
+                style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                Login
+              </font>
+              <img src="./Images/HomePage/logicon.png" class="Icons" >
+            </a>
+          </li>
+          <button class="NavName ulmarleft lightbtn" style="border-style: 1px #ffebe8;" onclick="Light()">
+            <img src="./Images/HomePage/sun.png" class="Icons2">
+          </button>
+          <button class="NavName ulmarleft2 lightbtn" onclick="Dark()">
+            <img src="./Images/HomePage/dark.png" class="Icons2" >
+          </button>
+          </ul> 
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="BGimg img-fluid">
+    <div class="HandBox col-lg-6 mt-5 col-md-6 mt-5 col-sm-6 mt-5 col-xs-6 mt-5">
+      <font class="HandName lg display-2 ms-3 mt-2">
+        The Wedding Story Book
+      </font>
+      <font class="HandSlogan">
+        "From Dreams To Reality: Let Us Plan Your Wedding"
+      </font>
+    </div>
+  </section>
+  <div>
+    <a href="./pages/Bride-Groom-Cloth.html">
+      <img src="./Images/HomePage/Bridaloutfit.webp" alt="Bride-Groom-Cloth" class="Bridaloutfit col-lg-11 ms-12 me-5 mt-5 col-sm-11 ms-5 me-5 mt-5 col-md-11 ms-5 me-5 mt-5 col-xs-11 ms-5 me-5 mt-5" style="border-radius: 35px;">
+    </a>
+  </div>
+  <div class="VidClass">
+    <video autoplay loop muted plays-inline class="video col-lg-8 col-sm-8 col-md-8 col-xs-8 mt-5 mb-5 ms-5" >
+      <source src="./Images/HomePage/wed video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="Slidesize">
+    <div id="carouselExampleCaptions" class="carousel slide col-lg-8 mt-5 ms-5 col-md-8 mt-5 ms-5 col-sm-8 mt-5 ms-5 col-xs-8 mt-5 ms-5 ">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="./pages/Photo-gallery.html">
+            <img src="./Images/HomePage/Photo Gallary.jpg" class="d-block w-100 SlideRad" alt="Photo Gallary">
+            <div class="carousel-caption d-none d-md-block HandBox2">
+              <h5>Photo Gallary</h5>
+              <p>A Day Without Photography Is Like A Day Without Sunshine.</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="./pages/MakeUp.html">
+            <img src="./Images/HomePage/MakeUp.jpg" class="d-block w-100 SlideRad" alt="MakeUp">
+            <div class="carousel-caption d-none d-md-block HandBox2">
+              <h5>Bridal Makeup</h5>
+              <p>On your wedding day, you should look like yourself at your most beautiful</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="./pages/Jewellery.html">
+            <img src="./Images/HomePage/Jewellary.jpg" class="d-block w-100 SlideRad" alt="Jewellary">
+            <div class="carousel-caption d-none d-md-block HandBox2">
+              <h5>Bridal Jewellary</h5>
+              <p>Jewellary is a lot like love; it's a good idea but expensive.</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="./pages/Halls.html">
+            <img src="./Images/HomePage/Lawns.jpg" class="d-block w-100 SlideRad" alt="Lawns">
+            <div class="carousel-caption d-none d-md-block HandBox2">
+              <h5>Wedding Halls</h5>
+              <p>A place where you meet your dream partner</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <button class="carousel-control-prev active" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next active" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+  <div class="Row m-5 p-1">
+    <div>
+      <img src="./Images/HomePage/Destwed.jpg" class="Destwed col-lg-8 me-5 col-sm-8 me-5 col-md-8 me-5 col-xs-8 me-2" alt="Rajwada" >
+      <img src="./Images/HomePage/DestWed2.jpg" class="Destwed2 col-lg-3 col-sm-3 col-md-3 col-xs-3 mt-3" alt="Rajwada" >
+    </div>
+  </div>
+
+
+  <div class="OurServ">
+    <h3>Our Core Services</h3>
+  </div>
+
+  <div class="row">
+    
+    <div class="card col-lg-3 p-2 ms-3 mb-5 col-md-10 col-sm-10 col-xs-10">
+      <div class="card-body Wedplan" >
+        <h2 class="card-title" style="text-align: center;">	
+          Wedding Planning</h2>
+        <p class="card-text">Our partial planning services is perfect for those couples who have already started their wedding process and need guidance regarding some elements of their wedding like decor designing.</p>
+      </div>
+    </div>
+
+    <div class="card col-lg-3 p-2 ms-3 mb-5 col-md-10 col-sm-10 col-xs-10">
+      <div class="card-body Wedplan">
+        <h2 class="card-title" style="text-align: center;">	
+          Vendor Sourcing</h2>
+        <p class="card-text">Special prices and exclusive discounts with our partners (Decorators, Entertainment, Bridal Makeup, Mehendi etc) and priority access to events sponsored by Wedding Story.</p>
+      </div>
+    </div>
+
+    <div class="card col-lg-3 p-2 ms-3 mb-5 col-md-10 col-sm-10 col-xs-10">
+      <div class="card-body Wedplan">
+        <h2 class="card-title" style="text-align: center;">	
+          Wedding Packages</h2>
+        <p class="card-text">Wedding packages are pre-arranged combinations of the best wedding deals. Wedding Packages are extremely popular when planning a destination wedding.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card col-lg-3 p-2 ms-3 mb-5 col-md-10 col-sm-10 col-xs-10">
+      <div class="card-body Wedplan" >
+        <h2 class="card-title" style="text-align: center;">	
+          Complete Wedding Planning</h2>
+        <p class="card-text">Our Full Service Wedding Planning includes every aspect of planning your wedding. No detail is left undone, as our team will be there for you in every step of the way</p>
+      </div>
+    </div>
+
+    <div class="card col-lg-3 p-2 ms-3 mb-5 col-md-10 col-sm-10 col-xs-10">
+      <div class="card-body Wedplan">
+        <h2 class="card-title" style="text-align: center;">	
+          Wedding Venue Booking</h2>
+        <p class="card-text">Wedding Story plans over 40 weddings in year. This avail us to get discounted rates from venues which are not available to you. Get benefits of our hotel tie-up. Post your requirements now.</p>
+      </div>
+    </div>
+
+    <div class="card col-lg-3 p-2 ms-3 mb-5 col-md-10 col-sm-10 col-xs-10">
+      <div class="card-body Wedplan">
+        <h2 class="card-title" style="text-align: center;">	
+          Wedding Decor</h2>
+        <p class="card-text">From the moment your guests walk in, they should experience your vision and personality through the stunning customized décor and unique touches that the  our wedding decorators will provide.</p>
+      </div>
+  </div>
+
+  <div>
+    <h1 class="ChecKwork">
+      Check Some of Latest Wedding Work
+    </h1>
+  </div>
+
+  <div class="CardRow">
+    <img src="./Images/HomePage/MahaMandap.jpeg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2 col-sm-3 m-2" >
+    <img src="./Images/HomePage/palkhi.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2" >
+    <img src="./Images/HomePage/MahaDeco.jpeg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2" >
+  </div>
+
+  <div class="CardRow">
+    <img src="./Images/HomePage/MAndap.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2" >
+    <img src="./Images/HomePage/Mandap2.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2" >
+    <img src="./Images/HomePage/mandap3.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2" >
+  </div>
+
+  <div class="CardRow">
+    <img src="./Images/HomePage/3mandap.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2" >
+    <img src="./Images/HomePage/31mandap.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2" >
+    <img src="./Images/HomePage/311mandap.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2" >
+  </div>
+  
+  <div class="CardRow">
+    <img src="./Images/HomePage/Mandap4.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2" >
+    <img src="./Images/HomePage/mandap5.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2" >
+    <img src="./Images/HomePage/312mandap.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2" >
+  </div>
+
+  <div class="VendorbBTNRow">
+    <button class="VendorbBTN">
+      <a href="./pages/Vendor.html" style="text-decoration: none; color: black; ">
+        Check Out Our Amazing Vendors
+      </a>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active p-2 p-lg-3" aria-current="page" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link p-2 p-lg-3" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link p-2 p-lg-3" href="#Appartments">Distinations</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link p-2 p-lg-3" href="#works">How it works</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link p-2 p-lg-3" href="#Agents">Agents</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link p-2 p-lg-3" href="#Contact">Contact Us</a>
-        </li>
-      </ul>
-      <div class="form p-2 p-lg-3">
-        <a class="text-decoration-none" href="#">join us</a>
-        <a class="btn" href="#">Get started</a>
+  </div>
+
+  <div class="row ContBord col-lg-11 m-5 p-5 ">
+    <div class="PartHead">
+      Our Partners
+    </div>
+    <div class="col-lg-11 col-sm-10 col-md-10 col-xs-10">
+    <img src="./Images/HomePage/Hotel1.png" class="rounded  img-fluid PartIMG ms-2 mt-5" alt=".">
+    <img src="./Images/HomePage/Hotel2.png" class="rounded  img-fluid PartIMG ms-2 mt-5" alt="...">
+    <img src="./Images/HomePage/Hotel10.png" class="rounded  img-fluid PartIMG ms-2 mt-5" alt="...">
+    <img src="./Images/HomePage/Hotel11.png" class="rounded  img-fluid PartIMG ms-2 mt-5" alt="...">
+    <img src="./Images/HomePage/hetel12.png" class="rounded  img-fluid PartIMG ms-2 mt-5" alt="...">
+    
+    </div>
+    <div class="col-lg-11">
+      <img src="./Images/HomePage/Hotel6.png" class="rounded  img-fluid PartIMG ms-4 mt-5" alt=".">
+      <img src="./Images/HomePage/Hotel7.png" class="rounded  img-fluid PartIMG ms-4 mt-5" alt="...">
+      <img src="./Images/HomePage/Hotel8.png" class="rounded  img-fluid PartIMG ms-4 mt-5" alt="...">
+      <img src="./Images/HomePage/Hotel9.png" class="rounded  img-fluid PartIMG ms-4 mt-5" alt="...">
+      <img src="./Images/HomePage/Hotel4.png" class="rounded  img-fluid PartIMG ms-4 mt-5" alt="...">
+      <img src="./Images/HomePage/hotel13.jfif" class="rounded  img-fluid PartIMG ms-4 mt-5" alt="...">
+      <img src="./Images/HomePage/hotel14.webp" class="rounded  img-fluid PartIMG ms-4 mt-5" alt="...">
+      </div>
+  </div>
+
+  <div class="row ContBord col-lg-10 my-5 mx-5">
+    <div class="ContactUS col-lg-5 m-3 p-3">
+      <h2 style="text-align: center;">
+        Contact Us
+      </h2>
+      <font class="ContactUSInfo">
+        At The Wedding Story Book, we understand that every couple's love story is unique and special, which is why we are committed to providing exceptional wedding photography services that capture the essence of your special day. We want to ensure that you have all the information you need to make an informed decision about our services, so we encourage you to contact us with any questions or inquiries you may have.
+        <br>
+        At The Wedding Story Book, we pride ourselves on our exceptional customer service and attention to detail. We believe that your wedding day is one of the most important days of your life, and we are committed to capturing every moment in stunning detail. Contact us today to learn more about our services and how we can help you create lasting memories of your special day.
+      </font>
+      <br><br>
+      <div class="InfoIcon">
+        <img src="./Images/HomePage/ContIcon.png" class="ContIcon">
+        <font style="margin-left: 30px;">
+          (555) 123-4567
+        </font>
+      </div>
+      <div class="InfoIcon">
+        <img src="./Images/HomePage/EmailIcon.png" class="ContIcon">
+        <font style="margin-left: 30px;">
+          info@weddingstorybook.com
+        </font>
       </div>
     </div>
-  </div>
-</nav>
-<!-- end header -->
-<!-- start landing -->
-  <div id="home" class="landing position-relative"data-aos="fade-right">
-    <div class="container">
-      <div class="box-1">
-        <h1>From Dreams To Reality <br>Plan Your Wedding</h1>
-        <div class="search position-relative">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="search" placeholder="search locatoin">
-          <input type="submit" value="search">
-        </div>
+    <div class= "ContForm col-lg-3 col-sm-8 col-md-8 col-xs-8 ms-5 me-5">
+      <label class="Contlabel ms-5" for="inputname">Name:</label><br>
+      <input type="Name" id="inputname" Placeholder="Please Enter Your Name" required class="ContInput col-lg-12  col-sm-8 col-md-8 col-xs-8 ms-5 me-5">
+      <br><br>
+      <label class="Contlabel ms-5" for="inputname">City:</label><br>
+      <input type="Name" id="inputname" Placeholder="Please Enter Your Name" required class="ContInput col-lg-12  col-sm-8 col-md-8 col-xs-8 ms-5 me-5">
+      <br><br>
+      <label class="Contlabel ms-5" for="inputname">Wedding Type:</label><br>
+      <select class="ContInput col-lg-12  col-sm-8 col-md-8 col-xs-8 ms-5 me-5">
+        <option  class="ContInput">
+          Choose Your Type
+        </option>
+        <option class="ContInput">
+          Local
+        </option>
+        <option class="ContInput">
+          Destination Wedding
+        </option>
+        <option class="ContInput">
+          Prime 
+        </option>
+        <option class="ContInput">
+          Supreme
+        </option>
+      </select>
+      <br><br>
+      <label class="Contlabel ms-5" for="inputname">Message:</label><br>
+      <input type="Message" id="inputname" Placeholder="Type Of Wedding You want" required class="ContInput2 col-lg-12  col-sm-8 col-md-8 col-xs-8 ms-5 me-5">
+      <br>
+      <div class="SubmitDiv mt-3 ms-3 mb-5">
+        <button class="SubmitBTN col-lg-6">
+          Cheers....!
+        </button>
       </div>
-      <div class="box-2" >
-        <div class="image-info">
-          <div class="box">
-            <i class="fa-solid fa-phone"></i>
-            <p>(000) 123-4567</p>
+      
+    </div>        
+  </div>
+
+<div class="col-lg-11">
+
+  <footer class=" text-center text-lg-start text-white">
+    <div class="container p-4">
+      <div class="row my-4">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <div class="rounded-circle  shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+            <img src="./Images/HomePage/LOGO WBG.png" height="180" alt=""
+                 loading="lazy" />
+            
           </div>
-          <div class="box">
-            <i class="fa-solid fa-location-dot"></i>
-            <p>Nagpur-India</p>
-          </div>
+          <h2 class="LogoName ms-5">The Wedding <br> Story Book</h2>
+
+          <p class="text-center2">"From Dreams To Reality: Let Us Plan Your Wedding"</p>
+
         </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Our Services</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="./pages/Decoration.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Decoration
+              <img src="./Images/HomePage/DecoIcon.png" class="Icons" >
+            </a>
+            </li>
+            <li class="mb-2">
+              <a href="./pages/Destination-Wedding.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Destination Wedding
+                <img src="./Images/HomePage/DestIcon.png" class="Icons" >
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="./pages/Photo-gallery.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Photo Gallery
+                <img src="./Images/HomePage/PhotIcon.png" class="Icons" >
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="./pages/MakeUp.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Makeup
+                <img src="./Images/HomePage/MakeIcon.png" class="Icons" >
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="./pages/Jewellery.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Jewellary
+                <img src="./Images/HomePage/jwelIcon.png" class="Icons" >
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="./pages/Bride-Groom-Cloth.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Bride Clothes
+                <IMG src="./Images/HomePage/BRIDiCON.png" class="Icons" >
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Our Services</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="./pages/Vendor.html" class="text-white" style="text-decoration: none"><i class="fas fa-paw pe-3"></i>Vendors
+                <img src="./Images/HomePage/VendIcon.png" class="Icons" >
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="./pages/Halls.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Halls & Lawns
+                <img src="./Images/HomePage/hallIcon.png" class="Icons" >
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="./pages/The-wedding-card.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>E-Invites</a>
+              <img src="./Images/HomePage/InviIcon.png" class="Icons" >
+            </li>
+            <li class="mb-2">
+              <a href="./pages/AboutUs.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>About Us
+                <img src="./Images/HomePage/AbouIcon.png" class="Icons" >
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="#Home" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Home
+                <img src="./Images/HomePage/HomeIcon.png" class="Icons" >
+              </a>
+            </li>
+          </ul>
+        </div>
+      
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Contact</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p><i class="fas fa-map-marker-alt pe-2"></i>Warsaw, 33 Street, Nagpur</p>
+            </li>
+            <li>
+              <p><i class="fas fa-phone pe-2"></i>+ (555) 123-4567</p>
+            </li>
+            <li>
+              <p><i class="fas fa-envelope pe-2 mb-0"></i>info@weddingstorybook.com</p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
       </div>
+      <!--Grid row-->
     </div>
-  </div>
-<!-- end landing -->
-<!-- start About -->
-<div id="about" class="about pt-5">
-  <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between">
-    <div class="text text-center text-md-start "data-aos="fade-right">
-      <h3 class="fs-1 fw-medium pb-5">Our’s Company <br> statistics</h3>
-      <p class="fs-5 pb-4">In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob or whatever comes first agile at the end of the day. Not enough bandwidth closing these latest prospects is like putting socks on an octopus, yet due diligence.</p>
-      <p class="fs-5 pb-3 pb-md-0">We need to get all stakeholders up to speed and in the right place hard stop, or technologically savvy or pre launch. Pro-sumer software commitment to the cause offline this discussion and wiggle room blue sky. Beef up teams were able to drive adoption and awareness. Screw the pooch killing it.</p>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: black">
+      © 2023 Copyright:
+      <a class="text-white" href="http://theweddingstorybook.netlify.app">theweddingstorybook.netlify.app</a>
     </div>
-    <div class="grid  mt-5 mt-lg-0"data-aos="fade-left" >
-        <div class="box text-center ">
-          <h3 class="fs-1">748</h3>
-          <p class="fs-3 fw-medium">distinations</p>
-        </div>
-        <div class="box text-center ">
-          <h3 class="fs-1">3854</h3>
-          <p class="fs-3 fw-medium">clients</p>
-        </div>
-        <div class="box text-center ">
-          <h3 class="fs-1">24</h3>
-          <p class="fs-3 fw-medium">empoloyees</p>
-        </div>
-        <div class="box text-center ">
-          <h3 class="fs-1">24</h3>
-          <p class="fs-3 fw-medium">Awards</p>
-        </div>
-    </div>
-  </div>
+    <!-- Copyright -->
+  </footer>
+
 </div>
-<!-- End About -->
-<!-- start Appartment -->
-<div id="Appartments" class="appartment pb-5" data-aos="fade-up">
-  <div class="container">
-    <h2 class="pb-5 ">More Then 500+ <br> distinations</h2>
-    <div class="row">
-      <div class="box  text-center" data-aos="fade-up">
-        <img src="./imgs/Creative-Wedding-Italy (2).jpg" alt="photo">
-        <div class="box-info">
-          <p class=" title">Random Street, Apt B453, New York</p>
-          <div class="info d-flex align-items-center justify-content-between">
-            <p class="price p-2 fs-3 fw-bold">$3,500</p>
-            <div class="icon d-flex p-2">
-              <i class="fa-solid fa-shower fs-3 pe-3"></i>
-              <p class="fs-3 pe-5"><span>2</span>BA</p>
-              <i class="fa-solid fa-bed fs-3 pe-3"></i>
-              <p class="fs-3"><span>2</span>BD</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="box  text-center" data-aos="fade-up">
-        <img src="./imgs/dqepj1k8_bali-mountains_625x300_14_June_23.webp" alt="photo">
-        <div class="box-info">
-          <p class=" title">Random Street, Apt B453, New York</p>
-          <div class="info d-flex align-items-center justify-content-between">
-            <p class="price p-2 fs-3 fw-bold">$3,500</p>
-            <div class="icon d-flex p-2">
-              <i class="fa-solid fa-shower fs-3 pe-3"></i>
-              <p class="fs-3 pe-5"><span>2</span>BA</p>
-              <i class="fa-solid fa-bed fs-3 pe-3"></i>
-              <p class="fs-3"><span>2</span>BD</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="box  text-center" data-aos="fade-up">
-        <img src="./imgs/wedding-planner-in-pushkar-neeraj-kamra.jpg" alt="photo">
-        <div class="box-info">
-          <p class=" title">Random Street, Apt B453, New York</p>
-          <div class="info d-flex align-items-center justify-content-between">
-            <p class="price p-2 fs-3 fw-bold">$3,500</p>
-            <div class="icon d-flex p-2">
-              <i class="fa-solid fa-shower fs-3 pe-3"></i>
-              <p class="fs-3 pe-5"><span>2</span>BA</p>
-              <i class="fa-solid fa-bed fs-3 pe-3"></i>
-              <p class="fs-3"><span>2</span>BD</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="box  text-center"data-aos="fade-up">
-        <img src="imgs/appartment-4.jpg" alt="photo">
-        <div class="box-info">
-          <p class=" title">Random Street, Apt B453, New York</p>
-          <div class="info d-flex align-items-center justify-content-between">
-            <p class="price p-2 fs-3 fw-bold">$3,500</p>
-            <div class="icon d-flex p-2">
-              <i class="fa-solid fa-shower fs-3 pe-3"></i>
-              <p class="fs-3 pe-5"><span>2</span>BA</p>
-              <i class="fa-solid fa-bed fs-3 pe-3"></i>
-              <p class="fs-3"><span>2</span>BD</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="box  text-center"data-aos="fade-up">
-        <img src="imgs/appartment-5.jpg" alt="photo">
-        <div class="box-info">
-          <p class=" title">Random Street, Apt B453, New York</p>
-          <div class="info d-flex align-items-center justify-content-between">
-            <p class="price p-2 fs-3 fw-bold">$3,500</p>
-            <div class="icon d-flex p-2">
-              <i class="fa-solid fa-shower fs-3 pe-3"></i>
-              <p class="fs-3 pe-5"><span>2</span>BA</p>
-              <i class="fa-solid fa-bed fs-3 pe-3"></i>
-              <p class="fs-3"><span>2</span>BD</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="box  text-center"data-aos="fade-up">
-        <img src="imgs/appartment-6.jpg" alt="photo">
-        <div class="box-info">
-          <p class=" title">Random Street, Apt B453, New York</p>
-          <div class="info d-flex align-items-center justify-content-between">
-            <p class="price p-2 fs-3 fw-bold">$3,500</p>
-            <div class="icon d-flex p-2">
-              <i class="fa-solid fa-shower fs-3 pe-3"></i>
-              <p class="fs-3 pe-5"><span>2</span>BA</p>
-              <i class="fa-solid fa-bed fs-3 pe-3"></i>
-              <p class="fs-3"><span>2</span>BD</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="button pt-5 text-center text-md-start d-flex align-items-center flex-column flex-md-row justify-content-between">
-      <div class="search position-relative">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="search" placeholder="search locatoin">
-        <input type="submit" value="search">
-      </div>
-      <a class="mt-4 mt-md-0" href="#Appartments">View All distinations</a>
-  </div>
-  </div>
-</div>
-<!-- end Appartment -->
-<!-- start work -->
-<div id="works" class="work pt-5 pb-5">
-  <div class="container">
-    <h3 class="fs-1 fw-bold pb-5 pt-5">How it works?</h3>
-    <p class="title fs-4 fw-medium pb-5">In this space market-facing, yet UI work flows , or bake it in. <br> Red flag we need a recap by eod, cob or whatever <br> comes first agile at the end of the day.</p>
-    <div class="row">
-      <div class="box  position-relative"data-aos="flip-left">
-        <div class="big-1">
-          <p class="big">01</p>
-        </div>
-        <div class="box-line d-flex pb-5 ps-3">
-          <p class="pe-3">01</p>
-          <p>find your location</p>
-        </div>
-        <div class="p-title">
-          <p class="">In this space market-facing, yet UI work flows , or bake it in. Red flag we neef the day.</p>
-        </div>
-        <div class="a-title">
-          <a href="">find location</a>
-        </div>
-      </div>
-      <div class="box  position-relative"data-aos="flip-left">
-        <div class="big-1">
-          <p class="big">02</p>
-        </div>
-        <div class="box-line d-flex pb-5 ps-3">
-          <p class="pe-3">02</p>
-          <p>find distinations</p>
-        </div>
-        <div class="p-title">
-          <p class="">In this space market-facing, yet UI work flows , or bake it in. Red flag we neef the day.</p>
-        </div>
-        <div class="a-title">
-          <a href="">find location</a>
-        </div>
-      </div>
-      <div class="box  position-relative"data-aos="flip-left">
-        <div class="big-1">
-          <p class="big">03</p>
-        </div>
-        <div class="box-line d-flex pb-5 ps-3">
-          <p class="pe-3">03</p>
-          <p>Make contact</p>
-        </div>
-        <div class="p-title">
-          <p class="">In this space market-facing, yet UI work flows , or bake it in. Red flag we neef the day.</p>
-        </div>
-        <div class="a-title">
-          <a href="">find location</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End work -->
-<!-- start services -->
-<div class="services pt-5 pb-5">
-  <div class="container">
-    <h3 class="fs-1 pb-4">Services</h3>
-    <p class="fs-5 pb-4">In this space market-facing, yet UI work flows , or bake it in. <br>Red flag we need a first agile at the end of the day.</p>
-    <div class="box pt-5 justify-content-center align-items-center d-flex flex-column flex-lg-row text-center text-lg-start"data-aos="zoom-in-up">
-      <div class="image">
-        <img src="imgs/services-1.jpg" alt="photo">
-      </div>
-      <div class="box-text" data-aos="zoom-in-up">
-        <div class="renting pb-5 ">
-          <h3 class="fs-1 fw-medium pb-3">Wedding Planner</h3>
-          <p>In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob or whatever comes first agile at the end of the day. Not enough bandwidth closing these latest prospects is like putting socks on an octopus, yet due diligence</p>
-        </div>
-        <div class="seling pb-5">
-          <h3 class="fs-1 fw-medium pb-3">Wedding Decoration</h3>
-          <p>In this space market-facing, yet UI work flows , or bake it in. Cob or whatever comes first agile at the end of the day. Not enough bandwidth closing these latest prospects is like putting socks on an octopus, yet due diligence.Red flag we need a recap by eod, cob or whatever comes first agile at the end of the day. Not enough bandwidth closing these latest prospects is like putting socks on an octopus, yet due diligence</p>
-        </div>
-        <div class="building pb-5">
-          <h3 class="fs-1 fw-medium pb-3">Wedding Tent Rental</h3>
-          <p>
-            In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob or whatever comes first agile at the end of the day. Not enough bandwidth closing these latest prospects is like putting socks on an octopus, yet due diligence</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end services -->
-<!-- start Agents -->
-<div id="Agents" class="agents  pt-5 pb-5">
-  <div class="container">
-    <h3 class="fs-1 pb-4">Meet Our Agents</h3>
-    <p class="fs-5 pb-4">In this space market-facing, yet UI work flows , or bake it in. <br>Red flag we need a recap by eod, cob or whatever comes <br>first agile at the end of the day.</p>
-    <div class="row">
-      <div class="box col-12 col-md-6 col-lg-4"data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1500">
-        <img src="imgs/agents-1.jpg" alt="photo">
-        <div class="box-text p-4">
-          <p class="fs-4 fw-bold pb-4">Agents</p>
-          <div class="flex d-flex align-items-center justify-content-between">
-            <div class="text">
-              <p class="fw-bold fs-5">mr .luke</p>
-              <p class="fw-bold fs-5">sky walker</p>
-            </div>
-            <div class="icons">
-              <i class="fa-brands fs-4 fa-facebook pe-2"></i>
-              <i class="fa-brands fs-4 fa-twitter pe-2"></i>
-              <i class="fa-brands fs-4 fa-chrome pe-2"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="box col-12 col-md-6 col-lg-4"data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1500">
-        <img src="imgs/agents-2.jpg" alt="photo">
-        <div class="box-text p-4">
-          <p class="fs-4 fw-bold pb-4">Agents</p>
-          <div class="flex d-flex align-items-center justify-content-between">
-            <div class="text">
-              <p class="fw-bold fs-5">mr .luke</p>
-              <p class="fw-bold fs-5">sky walker</p>
-            </div>
-            <div class="icons">
-              <i class="fa-brands fs-4 fa-facebook pe-2"></i>
-              <i class="fa-brands fs-4 fa-twitter pe-2"></i>
-              <i class="fa-brands fs-4 fa-chrome pe-2"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="box col-12 col-md-6 col-lg-4"data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1500">
-        <img src="imgs/agents-3.jpg" alt="photo">
-        <div class="box-text p-4">
-          <p class="fs-4 fw-bold pb-4">Agents</p>
-          <div class="flex d-flex align-items-center justify-content-between">
-            <div class="text">
-              <p class="fw-bold fs-5">mr .luke</p>
-              <p class="fw-bold fs-5">sky walker</p>
-            </div>
-            <div class="icons">
-              <i class="fa-brands fs-4 fa-facebook pe-2"></i>
-              <i class="fa-brands fs-4 fa-twitter pe-2"></i>
-              <i class="fa-brands fs-4 fa-chrome pe-2"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End Agents -->
-<!-- start awards -->
-<div class="awards pt-5 pb-5">
-  <div class="container">
-    <div class="flex-1 pb-5 d-flex align-items-center justify-content-between flex-column flex-lg-row">
-      <div class="image position-relative"data-aos="fade-right"
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <img src="imgs/Awards-1.jpg" alt="photo">
-        <div class="text d-flex align-items-center ">
-          <i class="fa-solid fa-location-dot fs-5 p-2"></i>
-          <p class="fs-5 p-2">Nagpur-India</p>
-        </div>
-      </div>
-      <div class="text pt-5 pt-lg-0 text-center text-md-start" data-aos="fade-left"
-      data-aos-offset="300"
-      data-aos-duration="300">
-        <h3 class="mb-5 fs-3 ">Super Awesome Add</h3>
-        <p class="">In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob or whatever comes first agile at the end of the day. Not enough bandwidth closing these latest prospects is like putting socks on an octopus, yet due diligence</p>
-      </div>
-    </div>
-    <div class="flex-1 pt-5 pb-5 d-flex align-items-center justify-content-between flex-column flex-lg-row-reverse">
-      <div class="image position-relative"data-aos="fade-left"
-      data-aos-offset="500"
-      data-aos-duration="500">
-        <img src="imgs/Awards-2.jpg" alt="photo">
-        <div class="text d-flex align-items-center ">
-          <i class="fa-solid fa-location-dot fs-5 p-2"></i>
-          <p class="fs-5 p-2">Melbourne,Australia</p>
-        </div>
-      </div>
-      <div class="text pt-5 pt-lg-0 text-center text-md-start"data-aos="fade-right"
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <h3 class="mb-5 fs-3 ">Super Awesome Add</h3>
-        <p class="">In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob or whatever comes first agile at the end of the day. Not enough bandwidth closing these latest prospects is like putting socks on an octopus, yet due diligence</p>
-      </div>
-    </div>
-    <div class="flex-1 pt-5 pb-5 d-flex align-items-center justify-content-between flex-column flex-lg-row">
-      <div class="image position-relative"data-aos="fade-right"
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <img src="imgs/Awards-3.jpg" alt="photo">
-      </div>
-      <div class="text pt-5 pt-lg-0 text-center text-md-start"data-aos="fade-left"
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-        <h3 class="mb-5 fs-3 ">Super Awesome Add</h3>
-        <p class="">In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob or whatever comes first agile at the end of the day. Not enough bandwidth closing these latest prospects is like putting socks on an octopus, yet due diligence</p>
-        <a href="">show me more</a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end awards -->
-<!-- start footer -->
-<div id="Contact" class="footer pt-5 pb-5 text-center text-md-start">
-  <div class="container">
-    <div class="row line pb-5 mb-5">
-      <div class="text-1 col-12 col-lg-6 "data-aos="fade-right">
-        <h3 class="fs-1 ">The vintage wow</h3>
-        <h3 class="fs-1">Explore Real Distinationa</h3>
-      </div>
-      <div class="text-2 d-flex align-items-center col-12 col-lg-6" data-aos="fade-left">
-        <input type="search" placeholder="subscribe to our newsletter">
-        <div class="icon fs-4"><i class="fa-solid fa-arrow-right-long"></i></div>
-      </div>
-    </div>
-    <div class="row"data-aos="fade-up">
-      <div class="box py-4 py-md-0 col-12 col-md-4 col-lg-4">
-        <div class="row">
-          <h3 class="col-6 col-md-12 float-end">The vintage wow</h3>
-          <div class="text col-6 col-md-12 float-start">
-            <p>&2019-vintage wow</p>
-            <p>All right reversed</p>
-          </div>
-        </div>
-      </div>
-      <div class="box py-4 py-md-0  col-12 col-md-2 col-lg-2">
-        <h3>The vintage-wow</h3>
-        <p>Agents</p>
-        <p>Hunter</p>
-      </div>
-      <div class="box py-4 py-md-0 col-12 col-md-2 col-lg-2">
-        <h3>company</h3>
-        <p>about</p>
-        <p>face</p>
-        <p>contact</p>
-        <p>social</p>
-      </div>
-      <div class="box py-4 py-md-0 col-12 col-md-2 col-lg-2">
-        <h3>product</h3>
-        <p>appartments</p>
-        <p>how it works</p>
-      </div>
-      <div class="box py-4 py-md-0 col-12 col-md-2 col-lg-2">
-        <h3>service</h3>
-        <p>renting</p>
-        <p>selling</p>
-        <p>building</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End footer -->
+<!-- End of .container -->
+  
+  
 
 
 
@@ -484,26 +486,21 @@
 
 
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous">
+  </script>
+  <script>
+    function Light() {
+        const Element = document.getElementById("DarkMode");
+        Element.className = "body";
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
+    function Dark() {
+        const Element = document.getElementById("DarkMode");
+        Element.className = "Dark";
+    }
 </script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/all.min.js"></script>
 </body>
+
 </html>
