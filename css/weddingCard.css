@@ -1,0 +1,45 @@
+body {
+    background-color: #ffebe8;
+}
+
+
+.card-img-top{
+   
+    box-shadow: 3px 3px 3px 2px rgb(114, 110, 110);
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+
+.card-title{
+    color: #e72e77;
+    cursor: pointer;
+
+}
+
+.head{
+    color:blueviolet;
+    cursor: pointer;
+}
+
+.clr{
+    color: #e72e77;
+}
+
+.container-md{
+    margin-bottom: 10px;
+}
+
+.card{
+    border-radius: 15px;
+    
+}
+
+.img1{
+    height: 200px;
+    width: 150px;
+    padding: 5px;
+}
+
+
